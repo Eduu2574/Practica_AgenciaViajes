@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica_agenciaviajes_eduardo.Controller.destinoController">
+    <children>
+        <Text fontSmoothingType="LCD" layoutX="224.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO A LA AGENCIA DE VIAJES" textAlignment="CENTER" wrappingWidth="582.515625">
+            <font>
+                <Font name="Corbel Light" size="34.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="89.0" layoutY="213.0">
+            <image>
+                <Image url="@../../../images/37f9COL5.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="133.0" fitWidth="208.0" layoutX="393.0" layoutY="213.0">
+            <image>
+                <Image url="@../../../images/eiffel-tower-in-paris-151-medium.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="710.0" layoutY="213.0">
+            <image>
+                <Image url="@../../../images/big-ben.png" />
+            </image>
+        </ImageView>
+        <RadioButton fx:id="romaRadioBtn" layoutX="140.0" layoutY="390.0" mnemonicParsing="false" text="Roma">
+            <toggleGroup>
+                <ToggleGroup fx:id="destino" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="parisRadioBtn" layoutX="436.0" layoutY="391.0" mnemonicParsing="false" text="París" toggleGroup="$destino" />
+        <RadioButton fx:id="londresRadioBtn" layoutX="764.0" layoutY="390.0" mnemonicParsing="false" text="Londres" toggleGroup="$destino" />
+        <Text layoutX="109.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escoge un destino:" />
+        <Text layoutX="109.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el medio de transporte:" />
+        <ComboBox fx:id="medioTransporteCb" layoutX="393.0" layoutY="479.0" prefWidth="150.0" />
+        <Button layoutX="701.0" layoutY="466.0" mnemonicParsing="false" onAction="#onComprarClic" prefHeight="100.0" prefWidth="254.0" text="COMPRAR" />
+    </children>
+</AnchorPane>

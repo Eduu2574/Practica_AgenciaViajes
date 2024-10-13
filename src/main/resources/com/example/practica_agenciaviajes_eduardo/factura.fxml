@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica_agenciaviajes_eduardo.Controller.facturaController">
+    <Label fx:id="nombreLabel" layoutX="106.0" layoutY="58.0" prefHeight="45.0" prefWidth="95.0" />
+    <Label fx:id="destinoLabel" layoutX="106.0" layoutY="132.0" text="Destino: ">
+      <font>
+         <Font name="Bell MT" size="26.0" />
+      </font></Label>
+    <Label fx:id="transporteLabel" layoutX="106.0" layoutY="200.0" text="Medio de transporte: ">
+      <font>
+         <Font name="Bell MT" size="26.0" />
+      </font></Label>
+    <Label fx:id="precioLabel" layoutX="106.0" layoutY="261.0" text="Precio: ">
+      <font>
+         <Font name="Bell MT" size="26.0" />
+      </font></Label>
+   <Text layoutX="103.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FACTURA GENERADA:">
+      <font>
+         <Font name="Bookshelf Symbol 7" size="40.0" />
+      </font>
+   </Text>
+</AnchorPane>
