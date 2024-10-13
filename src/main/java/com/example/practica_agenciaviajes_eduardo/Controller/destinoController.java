@@ -42,7 +42,7 @@ public class destinoController {
     @FXML
     public void initialize() {
         medioTransporteCb.getItems().addAll("Avión", "Tren", "Bus");
-        medioTransporteCb.getSelectionModel();  // Selecciona la primera opción por defecto
+        medioTransporteCb.getSelectionModel();
     }
 
     // Método que calcula el precio dependiendo del destino y el medio de transporte
@@ -81,7 +81,7 @@ public class destinoController {
     // Método para cuando se hace clic en "Comprar"
     @FXML
     public void onComprarClic(ActionEvent event) throws IOException {
-        // Obtener destino seleccionado
+        // Obtengo destino seleccionado
         String destinoSeleccionado = "";
         if (romaRadioBtn.isSelected()) {
             destinoSeleccionado = "Roma";
@@ -91,10 +91,10 @@ public class destinoController {
             destinoSeleccionado = "Londres";
         }
 
-        // Obtener medio de transporte seleccionado
+        // Obtengo medio de transporte seleccionado
         String transporte = medioTransporteCb.getSelectionModel().getSelectedItem();
 
-        // Comprobar que se haya seleccionado destino y medio de transporte
+        // Compurbeo que se haya seleccionado destino y medio de transporte
         if (destinoSeleccionado.isEmpty() || transporte == null) {
             mostrarAlerta("Error", "Por favor, selecciona un destino y un medio de transporte.");
             return;
