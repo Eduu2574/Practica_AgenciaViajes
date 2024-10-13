@@ -16,7 +16,7 @@ public class DataBaseManager {
 
         //especifico el nombre de usuario y contraseña para acceder a la base de datos
         String username = "root";
-        String password = "IESRibera23";
+        String password = "toor";
 
         //establezco la conexión a la base de datos utilizando DriverManager
         Connection connection = DriverManager.getConnection(url, username, password);
